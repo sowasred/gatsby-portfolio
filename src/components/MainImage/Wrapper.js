@@ -5,6 +5,11 @@ const Wrapper = styled.div`
   left: 0;
   top: -22vh;
   z-index: -3;
+  height: 125vh;
+  overflow: hidden;
+  @media only screen and (max-width: 1024px) {
+    top: -8vh;
+  }
 `;
 
 export default Wrapper;

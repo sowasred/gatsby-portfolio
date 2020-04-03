@@ -13,10 +13,9 @@ export const Card = styled.div`
     transition: all 0.1s ease-out;
   }
 
-  @media only screen and (max-width: 870px) {
-    border-left: none;
-    border-right: none;
-    padding: 75px 15px;
+  @media only screen and (max-width: 768px) {
+    max-width: 100vw;
+    padding: 0;
   }
 `;
 
@@ -25,10 +24,13 @@ export const CardMain = styled.div`
   margin: 12vh 12vw;
   border-radius: 3px;
   width: 50%;
-  @media only screen and (max-width: 870px) {
-    border-left: none;
-    border-right: none;
-    padding: 75px 15px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin: 5vh 0 0 0;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    width: 80%;
+    margin: 8vh 0 0 0;
   }
 `;
 
@@ -40,6 +42,9 @@ export const Wrapper = styled.div`
   width: 25vw;
   padding: 2vh;
   border-radius: 10px;
+
+  .otherprojects {
+  }
   h1 {
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
   }

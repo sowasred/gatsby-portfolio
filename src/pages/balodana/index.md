@@ -7,34 +7,21 @@ webaddress: "https://www.balodana.com/"
 
 ![Balodana Website](./balodana.jpg)
 
-In this project I was a part of team which created a blueprint of high-end ecommerce stores. Website is fully functional and ready for any business that desires to have a fast, elegant and secure marketplace and aims to meet the best product with the most suitable customer.
+### Balodana | Custom Made Women's Suits, Dresses, Blazers & More
+
+Balodana is a website of a company that tailors clothes for women, all made to measure and manufactured from all around the world.
 
 <!-- end -->
 
-The project includes important features which is cruical to keep the users in the page and allow them to be comfortable navigating in the website.
+![Balodana Collections](./balodanacollection.jpg)
 
-<!-- - **Functionality** (_for business owners_) -->
+#### Areas I've worked on this project
 
-## Crucial B2B Feature
-
-- Managing products with the ease of content management systems.
-- Scalability
-- Adjusting the main page and suggested products by the geographic location using google maps api.
+- Completed search functionality which was based on API calls.
+- Delivered various login options via Single Sign-on (SSO).
+- Built the shopping cart functionality.
 - Having different language options that again would enable you to access a wider audience.
 
 ![Balodana Designers](./balodanadesigners.jpg)
 
-#### Location based map shows retails around the user. User can visit retail stores and can check stores' products or retails' contact information etc.
-
-<!--
-  - Parallel design to the leading ecommerce solutions.
-  - Mobile-first design
-  - Fully responsible -->
-
-## All E-commerce Functionality
-
-- Comparing products with a click of a button.
-- Commenting and giving stars on products.
-- Sharing the products with your loved ones.
-- Adding products to wish list.
-  ![Balodana Collections](./balodanacollection.jpg)
+#### Each Designer has their own store users can visit.

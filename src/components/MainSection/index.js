@@ -8,6 +8,16 @@ const MainSection = styled.main`
   width: 50%;
   padding-left: 20vw;
   margin-top: 10vh;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    margin-top: 3vh;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    margin-top: 10vh;
+    padding: 0;
+  }
 `;
 
 export default MainSection;

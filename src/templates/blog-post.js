@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
               <h1 className="gohome">
                 <Link to="/">&#x2190; Go Home Page</Link>
               </h1>
-              <h1>Other Projects</h1>
+              <h1 className="otherprojects">Other Projects</h1>
               <InnerWrapper>
                 {posts && posts.length
                   ? posts.map(item => {

@@ -15,7 +15,11 @@ class Template extends React.Component {
     return (
       <React.Fragment>
         <MainImage />
-        <div style={{ position: "relative", height: "80% !important" }}>
+        <div
+          style={{
+            position: "relative"
+          }}
+        >
           <GlobalStyle />
           <Header config={userConfig} />
           {children}
