@@ -1,11 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const H2 = styled.h2`
-  color: #3e465b;
+  position: absolute;
+  left: 12vw;
+  top: 8vh;
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.5;
-  margin: 25px 50px 15px;
+  cursor: pointer;
 `;
 
 export default H2;

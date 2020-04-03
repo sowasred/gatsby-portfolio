@@ -1,29 +1,47 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const PostHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  position: relative;
+
   h1 {
-    color: #3e465b;
-    font-size: 35px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0 30px;
-    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+  .sitelink {
+    display: flex;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-weight: 800;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+    }
+  }
+  .sitelink:hover {
+    background: #e6ffff;
   }
 
   p {
     color: #666d71;
-    display: block;
-    font-size: 1.6em;
-    margin: 0;
-    text-align: center;
+    font-size: 35px;
+    line-height: 1.2;
   }
 
   span {
-    background: #9c9da3;
-    display: block;
-    margin: 50px auto;
+    background: black;
+    margin: 5px auto;
     height: 1px;
-    width: 150px;
+    width: 120px;
   }
 `;
 

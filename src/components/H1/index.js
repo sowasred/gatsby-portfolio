@@ -1,12 +1,19 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const H1 = styled.h1`
+export const H1 = styled.h1`
   color: #3e465b;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 1.5;
   margin: 0;
-  padding: 0 30px;
-  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
 `;
 
-export default H1;
+export const H2 = styled.h2`
+  color: black;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 25px;
+  cursor: pointer;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
+`;

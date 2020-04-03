@@ -1,15 +1,15 @@
-const _ = require('lodash');
-const Promise = require('bluebird');
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
-const createPaginatedPages = require('gatsby-paginate');
-const userConfig = require('./config');
+const _ = require("lodash");
+const Promise = require("bluebird");
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
+const createPaginatedPages = require("gatsby-paginate");
+const userConfig = require("./config");
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js');
+    const blogPost = path.resolve("./src/templates/blog-post.js");
     resolve(
       graphql(
         `
@@ -25,25 +25,16 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   excerpt
                   frontmatter {
+                    path
                     title
+                    webaddress
                     date(formatString: "MMMM D, YYYY")
-                    featuredImage {
-                      childImageSharp {
-                        sizes(maxWidth: 850) {
-                          base64
-                          aspectRatio
-                          src
-                          srcSet
-                          sizes
-                        }
-                      }
-                    }
                   }
                 }
               }
             }
           }
-        `,
+        `
       ).then(result => {
         if (result.errors) {
           console.log(result.errors);
@@ -58,24 +49,26 @@ exports.createPages = ({ graphql, actions }) => {
             index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
 
+          console.info("post", post);
+
           createPaginatedPages({
             edges: result.data.allMarkdownRemark.edges,
             createPage: createPage,
-            pageTemplate: 'src/templates/index.js',
-            pageLength: userConfig.postsPerPage,
+            pageTemplate: "src/templates/index.js",
+            pageLength: userConfig.postsPerPage
           });
 
           createPage({
-            path: post.node.fields.slug,
+            path: post.node.frontmatter.path,
             component: blogPost,
             context: {
-              slug: post.node.fields.slug,
+              slug: post.node.frontmatter.path,
               previous,
-              next,
-            },
+              next
+            }
           });
         });
-      }),
+      })
     );
   });
 };
@@ -88,7 +81,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value
     });
   }
 };

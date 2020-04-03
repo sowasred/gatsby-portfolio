@@ -1,8 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin-top: 50px;
+  display: flex;
   text-align: center;
+  position: absolute;
+  bottom: 8vh;
 `;
 
 export default Wrapper;

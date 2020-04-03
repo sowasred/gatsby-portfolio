@@ -1,8 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Container = styled.section`
-margin: 0 auto;
-max-width: 870px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5vh;
 `;
 
 export default Container;

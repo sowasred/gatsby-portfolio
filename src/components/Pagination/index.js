@@ -1,17 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Wrapper from './Wrapper';
-import Button from '../Button';
+import Wrapper from "./Wrapper";
+import Button from "../Button";
 
-function Pagination({previousUrl, nextUrl, isFirst = false, isLast = false}) {
+function Pagination({ previousUrl, nextUrl, isFirst = false, isLast = false }) {
   return (
     <Wrapper>
-      {!isFirst &&
-        <Button to={previousUrl}>&larr; Newer Posts</Button>
-      }
-      {!isLast &&
-        <Button to={nextUrl}>Older Posts &rarr;</Button>
-      }
+      {!isFirst && <Button to={previousUrl}>&larr; Newer Posts</Button>}
+      {!isLast && <Button to={nextUrl}>Older Posts &rarr;</Button>}
     </Wrapper>
   );
 }

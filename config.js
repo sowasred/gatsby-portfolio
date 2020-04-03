@@ -1,17 +1,19 @@
 module.exports = {
-  title: 'Dev Blog', // Required
-  author: 'Ryan Fitzgerald', // Required
-  description: 'Full-stack Web Developer',
-  primaryColor: '#3498db', // Required
+  title: "Ozan Muldur Personal Site", // Required
+  author: "Ozan Muldur", // Required
+  homeButton: "Ozan",
+  description: "Web Developer",
+  primaryColor: "black", // Required
   showHeaderImage: true,
-  showShareButtons: true,
+  showShareButtons: false,
   postsPerPage: 5, // Required
   social: {
-    website: 'https://ryanfitzgerald.ca',
-    github: 'https://github.com/ryanfitzgerald',
-    twitter: 'https://twitter.com/ryanafitzgerald',
-    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald',
+    website: "https://ozanmuldur.com",
+    github: "https://github.com/sowasred",
+    twitter: "https://twitter.com/sowasred1",
+    linkedin: "https://www.linkedin.com/in/ozanm/",
+    location: "Ontario, CA"
   },
-  pathPrefix: '/devblog',
-  siteUrl: 'https://ryanfitzgerald.github.io/devblog/',
+  pathPrefix: "/",
+  siteUrl: "https://ozanmuldur.com"
 };

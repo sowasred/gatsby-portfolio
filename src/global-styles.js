@@ -20,16 +20,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #f9fafc;
+   background: #f9fafc;    
     font-family: 'Open Sans', sans-serif; 
     line-height: 1.5;
-    padding: 50px 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding:0 7vh;
+
   }
 
   img {
     max-width: 100%;
+    
   }
 
   .gatsby-highlight {
