@@ -14,7 +14,14 @@ import Wrapper from "./Wrapper";
 import Resume from "./cv.png";
 
 function Header({ config }) {
-  const { author, description, social, homeButton } = config;
+  const { author, description, social, homeButton, resumeUrl } = config;
+  let postPage;
+
+  if (typeof window !== `undefined`) {
+    postPage =
+      window.location.pathname.includes("projects") |
+      window.location.pathname.includes("blog");
+  }
 
   return (
     <NavContainer>
@@ -22,14 +29,11 @@ function Header({ config }) {
         <Link to="/">
           <H2>{homeButton}</H2>
         </Link>
-        <a
-          href="https://drive.google.com/file/d/1MzmoMiyf3go-auSD3Xtm1Jx2_E0ey68F/view"
-          target="_blank"
-        >
-          <img className="resumeicon" src={Resume} alt="Resume icon"></img>
-        </a>
-        {/* <H3>Portfolio</H3>
-        <H3>Blog</H3> */}
+        {postPage ? null : (
+          <a href={resumeUrl} target="_blank">
+            <img className="resumeicon" src={Resume} alt="Resume icon"></img>
+          </a>
+        )}
       </Wrapper>
     </NavContainer>
   );

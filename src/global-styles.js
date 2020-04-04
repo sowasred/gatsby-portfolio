@@ -27,6 +27,9 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     padding:0 7vh;
 
+    @media only screen and (max-width: 870px) {
+      padding:0 2vh;
+  }
   }
 
   img {

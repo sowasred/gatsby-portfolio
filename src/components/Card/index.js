@@ -13,9 +13,10 @@ export const Card = styled.div`
     transition: all 0.1s ease-out;
   }
 
-  @media only screen and (max-width: 768px) {
-    max-width: 100vw;
+  @media only screen and (max-width: 769px) {
     padding: 0;
+    margin: 5px 0px;
+    max-width: 100vw;
   }
 `;
 
@@ -26,7 +27,8 @@ export const CardMain = styled.div`
   width: 50%;
   @media only screen and (max-width: 768px) {
     width: 100%;
-    margin: 5vh 0 0 0;
+    margin: auto 0;
+    margin-top: 5vh;
   }
   @media only screen and (max-width: 1024px) and (min-width: 768px) {
     width: 80%;
@@ -43,8 +45,6 @@ export const Wrapper = styled.div`
   padding: 2vh;
   border-radius: 10px;
 
-  .otherprojects {
-  }
   h1 {
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
   }
@@ -63,6 +63,35 @@ export const Wrapper = styled.div`
   .gohome:hover {
     background: #e6ffff;
   }
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    .gohome {
+      position: absolute !important;
+      top: 0vh;
+      right: 0;
+      font-size: 0.8em;
+      margin-top: 0;
+    }
+    .otherprojects {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+`;
+export const MobileWrapper = styled.div`
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  flex-wrap: wrap;
 `;
 
-export const InnerWrapper = styled.div``;
+export const InnerWrapper = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+ 
+`;

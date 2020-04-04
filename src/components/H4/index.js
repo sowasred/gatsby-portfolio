@@ -9,6 +9,9 @@ const H4 = styled.h3`
   cursor: pointer;
   font-weight: 700;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
+  @media only screen and(max-width: 870px) {
+    font-size: 18px !important;
+  }
 `;
 
 export default H4;

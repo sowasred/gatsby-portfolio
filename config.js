@@ -15,5 +15,7 @@ module.exports = {
     location: "Ontario, CA"
   },
   pathPrefix: "/",
-  siteUrl: "https://ozanmuldur.com"
+  siteUrl: "https://ozanmuldur.com",
+  resumeUrl:
+    "https://drive.google.com/file/d/1MzmoMiyf3go-auSD3Xtm1Jx2_E0ey68F/view"
 };

@@ -20,6 +20,15 @@ const Wrapper = styled.div`
   .sitelink:hover {
     background: #e6ffff;
   }
+
+  @media only screen and (max-width: 768px) {
+    .sitelink {
+      font-size: 12px;
+      padding: 0.3em;
+      margin-top: 0.4em;
+      margin-left: 1em;
+    }
+  }
 `;
 
 export default Wrapper;

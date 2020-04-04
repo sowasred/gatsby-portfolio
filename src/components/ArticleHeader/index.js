@@ -43,6 +43,13 @@ const PostHeader = styled.div`
     height: 1px;
     width: 120px;
   }
+  @media only screen and (max-width: 768px) {
+    .sitelink {
+      top: 0em;
+      right: 0em;
+      font-size: 10px;
+    }
+  }
 `;
 
 export default PostHeader;

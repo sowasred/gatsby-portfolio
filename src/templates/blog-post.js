@@ -9,14 +9,21 @@ import Layout from "./layout";
 
 import Article from "../components/Article";
 import ArticleHeader from "../components/ArticleHeader";
-import { Card, CardMain, Wrapper, InnerWrapper } from "../components/Card";
+import {
+  Card,
+  CardMain,
+  Wrapper,
+  InnerWrapper,
+  MobileWrapper
+} from "../components/Card";
 import Container from "../components/Container";
 // import FeaturedImage from "../components/FeaturedImage";
 import Share from "../components/Share";
 import Summary from "../components/Summary";
 import Footer from "../components/Footer";
 import Link from "../components/Header/Link";
-
+import MobileBadge from "../components/Summary/MobileBadge";
+import Homeicon from "../pages/images/homeicon.png";
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
@@ -28,8 +35,12 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     let url = "";
+    let mobileScreen;
     if (typeof window !== `undefined`) {
       url = window.location.href;
+    }
+    if (typeof window !== `undefined`) {
+      mobileScreen = window.screen.width <= 870;
     }
     let projects = false;
     if (typeof window !== `undefined`) {
@@ -109,6 +120,53 @@ class BlogPostTemplate extends React.Component {
         );
       }
     };
+    const renderMobilePosts = () => {
+      if (projects) {
+        return (
+          <React.Fragment>
+            <MobileWrapper>
+              {posts && posts.length
+                ? posts.map(item => {
+                    if (
+                      item.node.frontmatter.path.includes("projects") &&
+                      item.node.frontmatter.path !== post.frontmatter.path
+                    )
+                      return (
+                        <MobileBadge
+                          title={item.node.frontmatter.title}
+                          slug={item.node.frontmatter.path}
+                        />
+                      );
+                  })
+                : null}
+            </MobileWrapper>
+          </React.Fragment>
+        );
+      } else {
+        return (
+          <React.Fragment>
+            <MobileWrapper>
+              {posts && posts.length
+                ? posts.map(item => {
+                    if (
+                      item.node.frontmatter.path.includes("blog") &&
+                      item.node.frontmatter.path !== post.frontmatter.path
+                    )
+                      return (
+                        <MobileWrapper key={item.node.frontmatter.path}>
+                          <MobileBadge
+                            title={item.node.frontmatter.title}
+                            slug={item.node.frontmatter.path}
+                          />
+                        </MobileWrapper>
+                      );
+                  })
+                : null}
+            </MobileWrapper>
+          </React.Fragment>
+        );
+      }
+    };
 
     return (
       <Layout>
@@ -122,6 +180,11 @@ class BlogPostTemplate extends React.Component {
               content={`${userConfig.title} | ${userConfig.description}`}
             />
           </Helmet>
+          {mobileScreen ? (
+            <Link to="/">
+              <img className="homeicon" src={Homeicon} alt="home icon" />
+            </Link>
+          ) : null}
 
           <CardMain>
             <ArticleHeader>
@@ -134,9 +197,6 @@ class BlogPostTemplate extends React.Component {
                   </a>
                 </div>
               ) : null}
-
-              {/* <p>{post.frontmatter.date}</p> */}
-
               <span />
             </ArticleHeader>
             <Article>
@@ -146,7 +206,7 @@ class BlogPostTemplate extends React.Component {
               <Share url={url} title={post.frontmatter.title} />
             )}
           </CardMain>
-          {renderPosts()}
+          {mobileScreen ? renderMobilePosts() : renderPosts()}
 
           {/* <PageNav>
             {previous && (

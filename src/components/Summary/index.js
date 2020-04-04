@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import FeaturedImage from "../FeaturedImage";
 import H5 from "../H5";
 import P from "../P";
 import Wrapper from "./Wrapper";
@@ -8,8 +7,6 @@ import InnerWrapper from "./InnerWrapper";
 
 import Link from "./Link";
 import Date from "./Date";
-import ContinueReading from "./ContinueReading";
-import Button from "../Button";
 
 function Summary({ date, title, excerpt, slug, image, webaddress }) {
   return (
