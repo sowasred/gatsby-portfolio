@@ -30,14 +30,7 @@ export const SmallWrapper = styled.span`
   flex-direction: "column";
   padding: 20px;
   .icon {
-    font-size: 5em;
-    margin: 20px;
+    margin: 10px;
     transition: all 1s;
-  }
-  @media only screen and (max-width: 768px) {
-    .icon {
-      margin: 10px;
-      font-size: 3em;
-    }
   }
 `;
