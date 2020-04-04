@@ -23,6 +23,7 @@ import Git from "./logos/git.png";
 import Figma from "./logos/figma.png";
 import Pp from "./logos/pp.png";
 import Xd from "./logos/xd.png";
+import ReactLogo from "./logos/react.png";
 
 const Technologies = props => {
   const state = {
