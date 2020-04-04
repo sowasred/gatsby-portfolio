@@ -8,7 +8,7 @@ import { Wrapper, InnerWrapper, SmallWrapper } from "./Wrapper";
 import H5 from "../H5";
 import GatsbyLogo from "./logos/gatsby.png";
 
-import ReactLogo from "./logos/react.png";
+// import ReactLogo from "./logos/react.png";
 import ReduxLogo from "./logos/redux.png";
 import JavascriptLogo from "./logos/javascript.png";
 import Nodejs from "./logos/nodejs.png";
@@ -75,7 +75,7 @@ const Technologies = props => {
             fill="rgb(102,51,153)"
           />
         </svg> */}
-        <SmallWrapper>
+        {/* <SmallWrapper>
           <img
             data-tip="React"
             className="icon"
@@ -83,7 +83,7 @@ const Technologies = props => {
             alt="React icon"
           />
           <ReactTooltip />
-        </SmallWrapper>
+        </SmallWrapper> */}
         <SmallWrapper>
           <img
             data-tip="Redux"
