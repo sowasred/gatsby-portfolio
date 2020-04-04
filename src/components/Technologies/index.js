@@ -1,6 +1,6 @@
 import React from "react";
 
-import ReactTooltip from "react-tooltip";
+// import ReactTooltip from "react-tooltip";
 
 import PropTypes from "prop-types";
 import { WrapperTech, SmallWrapper } from "./Wrapper";
@@ -41,7 +41,7 @@ const Technologies = props => {
           src={JavascriptLogo}
           alt="Javascript icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -50,7 +50,7 @@ const Technologies = props => {
           src={GatsbyLogo}
           alt="Gatsby icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -60,7 +60,7 @@ const Technologies = props => {
           src={ReactLogo}
           alt="React icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -69,7 +69,7 @@ const Technologies = props => {
           src={ReduxLogo}
           alt="Redux icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -78,7 +78,7 @@ const Technologies = props => {
           src={Graphql}
           alt="Graphql icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -88,7 +88,7 @@ const Technologies = props => {
           src={Nodejs}
           alt="Nodejs icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -98,7 +98,7 @@ const Technologies = props => {
           src={Npm}
           alt="Npm icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -108,7 +108,7 @@ const Technologies = props => {
           src={WordPres}
           alt="Wordpress icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -118,12 +118,12 @@ const Technologies = props => {
           src={Mongo}
           alt="MongoDB icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
         <img data-tip="MySQL" className="icon" src={Mysql} alt="MySql icon" />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -133,7 +133,7 @@ const Technologies = props => {
           src={Aws}
           alt="Aws icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -148,7 +148,7 @@ const Technologies = props => {
 
       <SmallWrapper>
         <img data-tip="Figma" className="icon" src={Figma} alt="Figma icon" />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -158,12 +158,12 @@ const Technologies = props => {
           src={Pp}
           alt="photoshop icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
         <img data-tip="Adobe XD" className="icon" src={Xd} alt="adobexd icon" />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
     </WrapperTech>
   );
