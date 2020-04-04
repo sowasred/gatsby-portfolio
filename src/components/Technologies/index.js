@@ -75,7 +75,7 @@ const Technologies = props => {
             fill="rgb(102,51,153)"
           />
         </svg> */}
-        {/* <SmallWrapper>
+        <SmallWrapper>
           <img
             data-tip="React"
             className="icon"
@@ -83,7 +83,7 @@ const Technologies = props => {
             alt="React icon"
           />
           <ReactTooltip />
-        </SmallWrapper> */}
+        </SmallWrapper>
         <SmallWrapper>
           <img
             data-tip="Redux"
