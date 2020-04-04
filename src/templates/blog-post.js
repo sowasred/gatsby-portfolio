@@ -51,9 +51,9 @@ class BlogPostTemplate extends React.Component {
         return (
           <React.Fragment>
             <Wrapper>
-              <h1 className="gohome">
-                <Link to="/">&#x2190; Go Home Page</Link>
-              </h1>
+              <Link to="/">
+                <h1 className="gohome">&#x2190; Go Home Page</h1>
+              </Link>
               <h1 className="otherprojects">Other Projects</h1>
               <InnerWrapper>
                 {posts && posts.length

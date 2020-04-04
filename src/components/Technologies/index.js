@@ -1,7 +1,5 @@
 import React from "react";
 
-import ReactTooltip from "react-tooltip";
-
 import PropTypes from "prop-types";
 import { WrapperTech, SmallWrapper } from "./Wrapper";
 // import Technology from "./Technology";
@@ -41,13 +39,7 @@ const Technologies = props => {
           src={JavascriptLogo}
           alt="Javascript icon"
         />
-        <ReactTooltip
-          id="main"
-          place={state.place}
-          type={state.type}
-          effect={state.effect}
-          multiline={state.condition}
-        />
+        <ReactTooltip />
       </SmallWrapper>
       <SmallWrapper>
         <img
