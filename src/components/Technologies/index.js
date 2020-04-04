@@ -1,5 +1,7 @@
 import React from "react";
 
+import ReactTooltip from "react-tooltip";
+
 import PropTypes from "prop-types";
 import { WrapperTech, SmallWrapper } from "./Wrapper";
 // import Technology from "./Technology";
