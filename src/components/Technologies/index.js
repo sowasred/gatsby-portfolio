@@ -25,23 +25,23 @@ import Pp from "./logos/pp.png";
 import Xd from "./logos/xd.png";
 import ReactLogo from "./logos/react.png";
 
-const Technologies = props => {
+const Technologies = (props) => {
   const state = {
     place: "top",
     type: "success",
     effect: "solid",
-    condition: true
+    condition: true,
   };
   return (
     <WrapperTech>
       <SmallWrapper>
         <img
           data-tip="JavaScript"
+          title="JavaScript"
           className="icon"
           src={JavascriptLogo}
           alt="Javascript icon"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -49,8 +49,8 @@ const Technologies = props => {
           className="icon"
           src={GatsbyLogo}
           alt="Gatsby icon"
+          title="GatsbyJS"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -59,8 +59,8 @@ const Technologies = props => {
           className="icon"
           src={ReactLogo}
           alt="React icon"
+          title="React"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -68,8 +68,8 @@ const Technologies = props => {
           className="icon"
           src={ReduxLogo}
           alt="Redux icon"
+          title="Redux"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
       <SmallWrapper>
         <img
@@ -77,8 +77,8 @@ const Technologies = props => {
           data-tip="Graphql"
           src={Graphql}
           alt="Graphql icon"
+          title="GraphQL"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -87,8 +87,8 @@ const Technologies = props => {
           data-tip="Nodejs"
           src={Nodejs}
           alt="Nodejs icon"
+          title="Node.js"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -97,8 +97,8 @@ const Technologies = props => {
           className="icon"
           src={Npm}
           alt="Npm icon"
+          title="Node Package Manager"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -107,8 +107,8 @@ const Technologies = props => {
           className="icon"
           src={WordPres}
           alt="Wordpress icon"
+          title="Wordpress"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -117,13 +117,18 @@ const Technologies = props => {
           className="icon"
           src={Mongo}
           alt="MongoDB icon"
+          title="MongoDB"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
-        <img data-tip="MySQL" className="icon" src={Mysql} alt="MySql icon" />
-        {/* <ReactTooltip /> */}
+        <img
+          data-tip="MySQL"
+          title="MySQL"
+          className="icon"
+          src={Mysql}
+          alt="MySql icon"
+        />
       </SmallWrapper>
 
       <SmallWrapper>
@@ -132,8 +137,8 @@ const Technologies = props => {
           className="icon"
           src={Aws}
           alt="Aws icon"
+          title="Amazon Web Services"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
@@ -142,13 +147,18 @@ const Technologies = props => {
           className="icon"
           src={Git}
           alt="Git icon"
+          title="Git Version Controlling"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
-        <img data-tip="Figma" className="icon" src={Figma} alt="Figma icon" />
-        {/* <ReactTooltip /> */}
+        <img
+          data-tip="Figma"
+          title="Figma"
+          className="icon"
+          src={Figma}
+          alt="Figma icon"
+        />
       </SmallWrapper>
 
       <SmallWrapper>
@@ -156,14 +166,19 @@ const Technologies = props => {
           data-tip="Photoshop"
           className="icon"
           src={Pp}
+          title="Photoshop"
           alt="photoshop icon"
         />
-        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
-        <img data-tip="Adobe XD" className="icon" src={Xd} alt="adobexd icon" />
-        {/* <ReactTooltip /> */}
+        <img
+          data-tip="Adobe XD"
+          title="Adobe XD"
+          className="icon"
+          src={Xd}
+          alt="adobexd icon"
+        />
       </SmallWrapper>
     </WrapperTech>
   );

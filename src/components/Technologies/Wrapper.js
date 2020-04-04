@@ -33,4 +33,23 @@ export const SmallWrapper = styled.span`
     margin: 10px;
     transition: all 1s;
   }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip {
+    position: relative;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 `;
