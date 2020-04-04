@@ -143,7 +143,7 @@ const Technologies = props => {
           src={Git}
           alt="Git icon"
         />
-        <ReactTooltip />
+        {/* <ReactTooltip /> */}
       </SmallWrapper>
 
       <SmallWrapper>
