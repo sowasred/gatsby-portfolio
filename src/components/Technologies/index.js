@@ -3,7 +3,7 @@ import React from "react";
 import ReactTooltip from "react-tooltip";
 
 import PropTypes from "prop-types";
-import { Wrapper, SmallWrapper } from "./Wrapper";
+import { WrapperTech, SmallWrapper } from "./Wrapper";
 // import Technology from "./Technology";
 import H5 from "../H5";
 import GatsbyLogo from "./logos/gatsby.png";
@@ -33,7 +33,7 @@ const Technologies = props => {
     condition: true
   };
   return (
-    <Wrapper>
+    <WrapperTech>
       <SmallWrapper>
         <img
           data-tip="JavaScript"
@@ -171,7 +171,7 @@ const Technologies = props => {
         <img data-tip="Adobe XD" className="icon" src={Xd} alt="adobexd icon" />
         <ReactTooltip />
       </SmallWrapper>
-    </Wrapper>
+    </WrapperTech>
   );
 };
 

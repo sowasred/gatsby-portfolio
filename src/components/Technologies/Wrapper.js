@@ -12,6 +12,18 @@ export const Wrapper = styled.section`
   }
 `;
 
+export const WrapperTech = styled.div`
+  display: "flex !important";
+  margin-top: 5vh;
+  flex-wrap: "wrap";
+  @media only screen and (max-width: 870) {
+    margin-top: 6vh;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 870px) {
+    margin-top: 0vh;
+  }
+`;
+
 export const SmallWrapper = styled.span`
   display: "flex" !important;
   max-width: "48px" !important;

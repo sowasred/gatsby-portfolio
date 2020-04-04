@@ -13,8 +13,11 @@ const OtherSection = styled.div`
     width: 100vw !important;
     max-width: 100vw;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  @media only screen and (max-width: 1024px) and (min-width: 870px) {
     max-width: 40vw;
+  }
+  @media only screen and (min-width: 560px) and(max-width: 870px) {
+    max-width: 100vw;
   }
 `;
 

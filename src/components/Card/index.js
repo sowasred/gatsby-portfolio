@@ -18,6 +18,9 @@ export const Card = styled.div`
     margin: 5px 0px;
     max-width: 100vw;
   }
+  @media only screen and (min-width: 870px) and (max-width: 1024px) {
+    min-width: 24vw;
+  }
 `;
 
 export const CardMain = styled.div`
@@ -31,8 +34,15 @@ export const CardMain = styled.div`
     margin-top: 5vh;
   }
   @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    width: 80%;
     margin: 8vh 0 0 0;
+  }
+  @media only screen and (min-width: 560px) and (max-width: 870px) {
+    left: 15vw;
+    top: 10vh;
+    width: 100;
+  }
+  @media only screen and (min-width: 870px) and (max-width: 1024px) {
+    width: 80%;
   }
 `;
 
@@ -44,6 +54,9 @@ export const Wrapper = styled.div`
   width: 25vw;
   padding: 2vh;
   border-radius: 10px;
+  @media only screen and (min-width: 870px) and (max-width: 1024px) {
+    right: 2vh;
+  }
 
   h1 {
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2);
@@ -86,6 +99,10 @@ export const MobileWrapper = styled.div`
   top: 5vh;
   left: 10vw;
   flex-wrap: wrap;
+  @media only screen and (min-width: 560px) and (max-width: 870px) {
+    left: 15vw;
+    top: 10vh;
+  }
 `;
 
 export const InnerWrapper = styled.div`
