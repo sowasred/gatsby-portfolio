@@ -12,14 +12,11 @@ const Container = styled.section`
   }
   .homeicon {
     display: flex;
-    height: 15px;
+    height: 25px;
     position: absolute;
-    top: 7vh;
+    top: 4vh;
     right: 2vh;
     filter: invert(100%);
-  }
-  .homeicon:hover {
-    color: red;
   }
 `;
 

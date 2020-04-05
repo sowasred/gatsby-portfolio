@@ -6,7 +6,7 @@ const OtherSection = styled.div`
   position: relative;
   max-width: 50vw;
   overflow: hidden;
-  margin-top: 8vh;
+  margin-top: 5vh;
 
   @media only screen and (max-width: 768px) {
     margin-top: 2vh;

@@ -5,8 +5,6 @@ import "../global-styles";
 import userConfig from "../../config";
 
 import Header from "../components/Header";
-import MainImage from "../components/MainImage";
-import Footer from "../components/Footer";
 import GlobalStyle from "../global-styles";
 
 class Template extends React.Component {
@@ -14,10 +12,9 @@ class Template extends React.Component {
     const { children } = this.props;
     return (
       <React.Fragment>
-        <MainImage />
         <div
           style={{
-            position: "relative"
+            position: "relative",
           }}
         >
           <GlobalStyle />

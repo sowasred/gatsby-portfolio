@@ -7,7 +7,7 @@ const MainSection = styled.main`
   text-align: center;
   width: 50%;
   padding-left: 20vw;
-  margin-top: 10vh;
+  margin-top: 5vh;
 
   @media only screen and (max-width: 768px) {
     width: 100%;

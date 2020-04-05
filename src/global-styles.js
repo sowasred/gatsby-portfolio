@@ -20,12 +20,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-   background: #f9fafc;    
     font-family: 'Open Sans', sans-serif; 
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     padding:0 7vh;
+
 
     @media only screen and (max-width: 870px) {
       padding:0 2vh;

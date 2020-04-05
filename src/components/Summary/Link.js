@@ -12,7 +12,7 @@ const Link = styled(GatsbyLink)`
     background: #e6ffff !important;
   }
   @media only screen and (max-width: 768px) {
-    padding: 0;
+    padding: 5px;
     margin-left: 10px;
   }
 `;
