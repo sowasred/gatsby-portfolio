@@ -6,16 +6,16 @@ module.exports = {
   primaryColor: "black", // Required
   showHeaderImage: true,
   showShareButtons: false,
-  postsPerPage: 5, // Required
+  postsPerPage: 10, // Required
   social: {
     website: "https://ozanmuldur.com",
     github: "https://github.com/sowasred",
     twitter: "https://twitter.com/sowasred1",
     linkedin: "https://www.linkedin.com/in/ozanm/",
-    location: "Ontario, CA"
+    location: "Ontario, CA",
   },
   pathPrefix: "/",
   siteUrl: "https://ozanmuldur.com",
   resumeUrl:
-    "https://drive.google.com/file/d/1MzmoMiyf3go-auSD3Xtm1Jx2_E0ey68F/view"
+    "https://drive.google.com/file/d/1MzmoMiyf3go-auSD3Xtm1Jx2_E0ey68F/view",
 };

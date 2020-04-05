@@ -24,8 +24,6 @@ import Summary from "../components/Summary";
 
 const IndexPage = ({ pageContext }) => {
   const { group, index, pageCount } = pageContext;
-  const previousUrl = index - 1 === 1 ? "" : (index - 1).toString();
-  const nextUrl = (index + 1).toString();
   const [blogposts, setBlogposts] = useState([]);
   const [projects, setProjects] = useState([]);
 
@@ -34,6 +32,7 @@ const IndexPage = ({ pageContext }) => {
 
   useEffect(() => {
     group.map(({ node }) => {
+      console.info("count", node);
       console.info("ses", node.frontmatter.path.includes("projects"));
       if (node.frontmatter.path.includes("projects")) {
         console.info("node", node);
@@ -52,7 +51,7 @@ const IndexPage = ({ pageContext }) => {
       <React.Fragment>
         <H4>Projects </H4>
         {projects && projects.length > 0 ? (
-          projects.map(node => (
+          projects.map((node) => (
             <Card key={node.frontmatter.path}>
               <Summary
                 date={node.frontmatter.date}
@@ -76,7 +75,7 @@ const IndexPage = ({ pageContext }) => {
         )}
         <H4>Recent Blog Posts </H4>
         {blogposts && blogposts.length > 0 ? (
-          blogposts.map(node => (
+          blogposts.map((node) => (
             <Card key={node.frontmatter.path}>
               <Summary
                 date={node.frontmatter.date}

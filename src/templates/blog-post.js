@@ -14,7 +14,7 @@ import {
   CardMain,
   Wrapper,
   InnerWrapper,
-  MobileWrapper
+  MobileWrapper,
 } from "../components/Card";
 import Container from "../components/Container";
 // import FeaturedImage from "../components/FeaturedImage";
@@ -57,7 +57,7 @@ class BlogPostTemplate extends React.Component {
               <h1 className="otherprojects">Other Projects</h1>
               <InnerWrapper>
                 {posts && posts.length
-                  ? posts.map(item => {
+                  ? posts.map((item) => {
                       if (
                         item.node.frontmatter.path.includes("projects") &&
                         item.node.frontmatter.path !== post.frontmatter.path
@@ -88,10 +88,13 @@ class BlogPostTemplate extends React.Component {
         return (
           <React.Fragment>
             <Wrapper>
+              <Link to="/">
+                <h1 className="gohome">&#x2190; Go Home Page</h1>
+              </Link>
               <h1>Other Blog Posts</h1>
               <InnerWrapper>
                 {posts && posts.length
-                  ? posts.map(item => {
+                  ? posts.map((item) => {
                       if (
                         item.node.frontmatter.path.includes("blog") &&
                         item.node.frontmatter.path !== post.frontmatter.path
@@ -126,7 +129,7 @@ class BlogPostTemplate extends React.Component {
           <React.Fragment>
             <MobileWrapper>
               {posts && posts.length
-                ? posts.map(item => {
+                ? posts.map((item) => {
                     if (
                       item.node.frontmatter.path.includes("projects") &&
                       item.node.frontmatter.path !== post.frontmatter.path
@@ -147,7 +150,7 @@ class BlogPostTemplate extends React.Component {
           <React.Fragment>
             <MobileWrapper>
               {posts && posts.length
-                ? posts.map(item => {
+                ? posts.map((item) => {
                     if (
                       item.node.frontmatter.path.includes("blog") &&
                       item.node.frontmatter.path !== post.frontmatter.path

@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         `
-      ).then(result => {
+      ).then((result) => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
@@ -55,7 +55,6 @@ exports.createPages = ({ graphql, actions }) => {
             edges: result.data.allMarkdownRemark.edges,
             createPage: createPage,
             pageTemplate: "src/templates/index.js",
-            pageLength: userConfig.postsPerPage
           });
 
           createPage({
@@ -64,8 +63,8 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               slug: post.node.frontmatter.path,
               previous,
-              next
-            }
+              next,
+            },
           });
         });
       })
@@ -81,7 +80,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value
+      value,
     });
   }
 };
