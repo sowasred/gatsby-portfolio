@@ -11,7 +11,10 @@ const NavContainer = styled.section`
     top: 5vh;
     right: 0;
   }
-
+img{
+  z-index:99;
+  cursor:pointer;
+}
 
   @media only screen and (max-width: 870px) {
     .theme{
