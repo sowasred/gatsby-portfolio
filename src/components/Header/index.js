@@ -14,7 +14,7 @@ function Header({ config }) {
   if (typeof window !== `undefined`) {
     websiteTheme = window.__theme;
   }
-  const [theme, setTheme] = useState(websiteTheme);
+  const [theme, setTheme] = useState("light");
   const { author, description, social, homeButton, resumeUrl } = config;
   let postPage;
 
