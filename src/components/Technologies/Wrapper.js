@@ -33,6 +33,7 @@ export const SmallWrapper = styled.span`
     margin: 10px;
     transition: all 1s;
   }
+
   .tooltip .tooltiptext {
     visibility: hidden;
     background-color: black;

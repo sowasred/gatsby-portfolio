@@ -26,12 +26,6 @@ import Xd from "./logos/xd.png";
 import ReactLogo from "./logos/react.png";
 
 const Technologies = (props) => {
-  const state = {
-    place: "top",
-    type: "success",
-    effect: "solid",
-    condition: true,
-  };
   return (
     <WrapperTech>
       <SmallWrapper>
@@ -134,7 +128,7 @@ const Technologies = (props) => {
       <SmallWrapper>
         <img
           data-tip="Amazon Web Services"
-          className="icon"
+          className="icon aws"
           src={Aws}
           alt="Aws icon"
           title="Amazon Web Services"

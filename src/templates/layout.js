@@ -3,7 +3,6 @@ import "prismjs/themes/prism.css";
 
 import "../global-styles";
 import userConfig from "../../config";
-
 import Header from "../components/Header";
 import GlobalStyle from "../global-styles";
 

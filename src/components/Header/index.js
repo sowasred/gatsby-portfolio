@@ -1,19 +1,20 @@
-import React from "react";
-import userConfig from "../../../config";
+import React, { useState, useEffect } from "react";
 
 import NavContainer from "../NavContainer";
 
-import MainImage from "../MainImage";
-
 import H2 from "../H2";
-import H3 from "../H3";
-
-import P from "./P";
 import Link from "./Link";
 import Wrapper from "./Wrapper";
 import Resume from "./cv.png";
+import moon from "./moon.png";
+import sun from "./sun.png";
 
 function Header({ config }) {
+  let websiteTheme;
+  if (typeof window !== `undefined`) {
+    websiteTheme = window.__theme;
+  }
+  const [theme, setTheme] = useState(websiteTheme);
   const { author, description, social, homeButton, resumeUrl } = config;
   let postPage;
 
@@ -22,6 +23,16 @@ function Header({ config }) {
       window.location.pathname.includes("projects") |
       window.location.pathname.includes("blog");
   }
+  useEffect(() => {
+    setTheme(window.__theme);
+    window.__onThemeChange = () => {
+      setTheme(window.__theme);
+    };
+  }, []);
+
+  const ThemeToggle = () => {
+    window.__setPreferredTheme(websiteTheme === "dark" ? "light" : "dark");
+  };
 
   return (
     <NavContainer>
@@ -35,6 +46,13 @@ function Header({ config }) {
           </a>
         )}
       </Wrapper>
+      <div className="theme" onClick={ThemeToggle}>
+        {theme === "dark" ? (
+          <img src={sun} alt="Light mode" />
+        ) : (
+          <img src={moon} alt="Dark mode" />
+        )}
+      </div>
     </NavContainer>
   );
 }

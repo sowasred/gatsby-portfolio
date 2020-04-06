@@ -11,7 +11,9 @@ function Footer() {
   return (
     <Wrapper>
       <H3>
-        <Link to="/">{userConfig.homeButton}</Link>
+        <Link className="footername" to="/">
+          {userConfig.homeButton}
+        </Link>
       </H3>
       <span>|</span>
 

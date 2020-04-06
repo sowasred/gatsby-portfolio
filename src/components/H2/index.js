@@ -13,14 +13,15 @@ const H2 = styled.h2`
     color: #e6ffff;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     left: 0vw;
     top: 3vh;
     font-size: 15px;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    left: 9vw;
-    top: 8.5vh;
+  @media only screen and (max-width: 1024px) and (min-width: 767px) {
+    left: 1vw;
+    top: 8vh;
+    font-size: 2em;
   }
 `;
 

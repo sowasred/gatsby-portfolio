@@ -99,9 +99,14 @@ export const MobileWrapper = styled.div`
   top: 5vh;
   left: 10vw;
   flex-wrap: wrap;
-  @media only screen and (min-width: 560px) and (max-width: 870px) {
+
+  @media only screen and (min-width: 560px) and (max-width: 768px) {
     left: 15vw;
     top: 10vh;
+  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    left: 8vw;
   }
 `;
 

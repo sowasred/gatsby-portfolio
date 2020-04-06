@@ -15,8 +15,13 @@ const Container = styled.section`
     height: 25px;
     position: absolute;
     top: 4vh;
-    right: 2vh;
+    right: 6vh;
     filter: invert(100%);
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .homeicon {
+      right: 3vw;
+    }
   }
 `;
 

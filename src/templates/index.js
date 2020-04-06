@@ -113,9 +113,7 @@ const IndexPage = ({ pageContext }) => {
         </Helmet>
 
         <MainSection>
-          <H1>
-            <Link to="/">{userConfig.author}</Link>
-          </H1>
+          <H1>{userConfig.author}</H1>
           <H2>{userConfig.description}</H2>
           {userConfig.social && (
             <Social
