@@ -15,7 +15,7 @@ function Footer() {
           {userConfig.homeButton}
         </Link>
       </H3>
-      <span>|</span>
+      <span>| </span>
 
       {userConfig.social && (
         <Social
@@ -24,6 +24,7 @@ function Footer() {
           linkedin={userConfig.social.linkedin}
         />
       )}
+      <div className="gatsbyref"> © 2020, Built with Gatsby. </div>
     </Wrapper>
   );
 }

@@ -8,7 +8,15 @@ const Wrapper = styled.footer`
   margin: 7vh 0;
   border-radius: 20px;
   width: 100%;
-
+  flex-wrap: wrap;
+  .gatsbyref {
+    display: flex;
+    width: 100vw;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+  }
   span {
     display: flex;
     align-items: center;
