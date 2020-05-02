@@ -2,10 +2,8 @@ import React from "react";
 
 // import ReactTooltip from "react-tooltip";
 
-import PropTypes from "prop-types";
 import { WrapperTech, SmallWrapper } from "./Wrapper";
 // import Technology from "./Technology";
-import H5 from "../H5";
 import GatsbyLogo from "./logos/gatsby.png";
 
 // import ReactLogo from "./logos/react.png";
@@ -34,7 +32,7 @@ const Technologies = (props) => {
           title="JavaScript"
           className="icon"
           src={JavascriptLogo}
-          alt="Javascript icon"
+          alt="Javascript"
         />
       </SmallWrapper>
       <SmallWrapper>
@@ -42,7 +40,7 @@ const Technologies = (props) => {
           data-tip="Gatsbyjs"
           className="icon"
           src={GatsbyLogo}
-          alt="Gatsby icon"
+          alt="Gatsby"
           title="GatsbyJS"
         />
       </SmallWrapper>
@@ -52,7 +50,7 @@ const Technologies = (props) => {
           data-tip="React"
           className="icon"
           src={ReactLogo}
-          alt="React icon"
+          alt="React"
           title="React"
         />
       </SmallWrapper>
@@ -61,7 +59,7 @@ const Technologies = (props) => {
           data-tip="Redux"
           className="icon"
           src={ReduxLogo}
-          alt="Redux icon"
+          alt="Redux"
           title="Redux"
         />
       </SmallWrapper>
@@ -70,7 +68,7 @@ const Technologies = (props) => {
           className="icon"
           data-tip="Graphql"
           src={Graphql}
-          alt="Graphql icon"
+          alt="Graphql"
           title="GraphQL"
         />
       </SmallWrapper>
@@ -80,7 +78,7 @@ const Technologies = (props) => {
           className="icon"
           data-tip="Nodejs"
           src={Nodejs}
-          alt="Nodejs icon"
+          alt="Nodejs"
           title="Node.js"
         />
       </SmallWrapper>
@@ -90,7 +88,7 @@ const Technologies = (props) => {
           data-tip="Node Package Manager"
           className="icon"
           src={Npm}
-          alt="Npm icon"
+          alt="Npm"
           title="Node Package Manager"
         />
       </SmallWrapper>
@@ -100,7 +98,7 @@ const Technologies = (props) => {
           data-tip="WordPress"
           className="icon"
           src={WordPres}
-          alt="Wordpress icon"
+          alt="Wordpress"
           title="Wordpress"
         />
       </SmallWrapper>
@@ -110,7 +108,7 @@ const Technologies = (props) => {
           data-tip="MongoDB"
           className="icon"
           src={Mongo}
-          alt="MongoDB icon"
+          alt="MongoDB"
           title="MongoDB"
         />
       </SmallWrapper>
@@ -121,7 +119,7 @@ const Technologies = (props) => {
           title="MySQL"
           className="icon"
           src={Mysql}
-          alt="MySql icon"
+          alt="MySql"
         />
       </SmallWrapper>
 
@@ -130,7 +128,7 @@ const Technologies = (props) => {
           data-tip="Amazon Web Services"
           className="icon aws"
           src={Aws}
-          alt="Aws icon"
+          alt="Aws"
           title="Amazon Web Services"
         />
       </SmallWrapper>
@@ -140,7 +138,7 @@ const Technologies = (props) => {
           data-tip="Git Version Controlling"
           className="icon"
           src={Git}
-          alt="Git icon"
+          alt="Git"
           title="Git Version Controlling"
         />
       </SmallWrapper>
@@ -151,7 +149,7 @@ const Technologies = (props) => {
           title="Figma"
           className="icon"
           src={Figma}
-          alt="Figma icon"
+          alt="Figma"
         />
       </SmallWrapper>
 
@@ -161,7 +159,7 @@ const Technologies = (props) => {
           className="icon"
           src={Pp}
           title="Photoshop"
-          alt="photoshop icon"
+          alt="Photoshop"
         />
       </SmallWrapper>
 
@@ -171,7 +169,7 @@ const Technologies = (props) => {
           title="Adobe XD"
           className="icon"
           src={Xd}
-          alt="adobexd icon"
+          alt="Adobexd"
         />
       </SmallWrapper>
     </WrapperTech>
