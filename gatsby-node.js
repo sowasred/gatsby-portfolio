@@ -49,8 +49,6 @@ exports.createPages = ({ graphql, actions }) => {
             index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
 
-          console.info("post", post);
-
           createPaginatedPages({
             edges: result.data.allMarkdownRemark.edges,
             createPage: createPage,

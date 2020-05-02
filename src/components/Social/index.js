@@ -65,7 +65,7 @@ function Social({ website, twitter, github, linkedin, location }) {
       )}
       {location && location.length > 3 ? (
         <div>
-          <img height="24" src={Pinmark} alt="location" />
+          <img height="24" src={Pinmark} />
           <p>{location} </p>
         </div>
       ) : null}

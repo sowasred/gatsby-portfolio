@@ -29,8 +29,6 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const posts = this.props.data.allMarkdownRemark.edges;
 
-    console.info("posts", posts);
-
     const author = get(this.props, "data.site.siteMetadata.author");
     const { previous, next } = this.props.pageContext;
 
