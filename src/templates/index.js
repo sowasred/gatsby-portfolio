@@ -32,13 +32,9 @@ const IndexPage = ({ pageContext }) => {
 
   useEffect(() => {
     group.map(({ node }) => {
-      console.info("count", node);
-      console.info("ses", node.frontmatter.path.includes("projects"));
       if (node.frontmatter.path.includes("projects")) {
-        console.info("node", node);
         tempArray1.push(node);
       } else {
-        console.info("node99", node);
         tempArray2.push(node);
       }
     });
@@ -94,11 +90,6 @@ const IndexPage = ({ pageContext }) => {
       </React.Fragment>
     );
   };
-
-  console.info("yarrak", group, "index", index, "pageCount", pageCount);
-
-  console.info("portfoliooo", projects);
-  console.info("blogposts", blogposts);
   return (
     <Layout>
       <Container>
