@@ -109,7 +109,6 @@ const IndexPage = ({ pageContext }) => {
           {userConfig.social && (
             <Social
               github={userConfig.social.github}
-              twitter={userConfig.social.twitter}
               linkedin={userConfig.social.linkedin}
               location={userConfig.social.location}
             />
