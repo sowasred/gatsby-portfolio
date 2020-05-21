@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   z-index: -3;
   height: 125vh;
   overflow: hidden;
-  background-repeat: repeat;
   @media only screen and (max-width: 1024px) {
     top: -8vh;
   }

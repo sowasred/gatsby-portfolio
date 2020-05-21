@@ -17,5 +17,5 @@ module.exports = {
   pathPrefix: "/",
   siteUrl: "https://ozanmuldur.com",
   resumeUrl:
-    "https://drive.google.com/file/d/1MzmoMiyf3go-auSD3Xtm1Jx2_E0ey68F/view",
+    "https://drive.google.com/open?id=1STsE2Dlzay4pQGfs9HR5A1bX4V4pfZfh",
 };
